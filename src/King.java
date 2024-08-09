@@ -1,12 +1,11 @@
-public class King extends StandartFigure{
-    public King(String nameOrPicture, String color, int[] coordinates){
-        super(nameOrPicture, color, coordinates);
-    }
-    public void displayFigureKing(){
-        for (int i = 0; i < coordinates.length; i++) {
-            System.out.print(coordinates[i] + " ");
-        }
-        System.out.println("цвет фигуры: " + color + " название или же картинка " +nameOrPicture + " координаты находятся выше");
+class King extends ChessFigure{
+    private String nameFigure;
+    public King(String y, String x, FigurePicture picture,FigureColor color,  String nameFigure){
+        super(x, y, picture, color);
+        this.nameFigure = nameFigure;
 
+    }
+    public void figureMove(String newY){
+        System.out.println("Фигура "+ nameFigure+"перемещена на координаты: " + getX() + newY);
     }
 }
