@@ -1,11 +1,11 @@
-class Ladia extends King{
+class Ladia extends ChessFigure{
     int randomQueenX;
     public Ladia(String y, String x, FigurePicture picture,FigureColor color,  String nameFigure, int randomQueenX){
-        super(x, y, picture, color, nameFigure);
+        super(x, y, picture, color);
         this.randomQueenX = randomQueenX;
 
     }
-    public void figureMove(String nameFigure, int randomQueenX){
-        System.out.println("Фигура "+ nameFigure+"перемещена на координаты: " + randomQueenX);
+    void figureMove(){
+        System.out.println("Фигура перемещена на координаты: " + randomQueenX);
     }
 }

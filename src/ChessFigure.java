@@ -1,5 +1,5 @@
 
-class ChessFigure {
+public abstract class  ChessFigure {
     private String x;
     private String y;
     private FigurePicture picture;
@@ -24,8 +24,5 @@ class ChessFigure {
         System.out.println("Координаты: " + x + y);
     }
 
-    public void figureMove(String newY) {
-        this.y = newY;
-        System.out.println("Фигура перемещена на координаты: " + x + y);
-    }
+    abstract void figureMove();
 }

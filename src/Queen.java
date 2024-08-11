@@ -5,7 +5,7 @@ class Queen extends King{
         this.randomQueenX = randomQueenX;
 
     }
-    public void figureMove(String nameFigure, int randomQueenX){
+    void figureMove(String nameFigure, int randomQueenX){
         System.out.println("Фигура "+ nameFigure+"перемещена на координаты: " + randomQueenX);
     }
 }
